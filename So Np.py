@@ -29,6 +29,10 @@ class graph:
 
 n,m,k=map(int,input().split())
 
+if n==k:
+    print(m)
+    sys.exit()
+
 g=graph(n)
 for i in range(m):
     u,v=map(int,input().split())
